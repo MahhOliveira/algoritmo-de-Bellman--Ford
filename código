@@ -1,0 +1,15 @@
+Bellman_Ford(G,pesos,inicial)
+*//para todo vertice € V*//
+
+ʎ [vertice] ← ∞
+⫪ [vertice] ← nulo
+ʎ [inicial] ← 0
+para 1 de 1 até |V| - 1
+para toda aresta = (u,v) ∊ A
+se ʎ [V] > ʎ [u] + pesos(u.v) 
+   ʎ [V] ← ʎ [u] + pesos(u,v)
+   ⫪ [V] ← u
+   
+ G é um grafo no formato G = (V,A), n|v| indica o predecessor de v,ʎ |v| é o custo de sair da origem e chegar até o vértice v e inicial é o vértice inicial. Após 
+ término do algoritmo, para cada v pertencente aos vértices de G, n[v] → y representa uma aresta selecionada para a árvore geradora mínima ( se y = nulo)e,
+ pensando em árvore, ʎ |v| representa a distancia da raiz até o vértice v. 
